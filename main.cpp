@@ -80,15 +80,13 @@ void debug_settings::save(const std::string &filename)
 }
 //]
 
-// Added by Richel Bilderbeek
-// C++14
-auto f() noexcept 
-{
-  return "Hello world\n";
-}
+
 
 int main()
 {
+    // Added by Richel Bilderbeek
+    static_assert("C++17"); //C++17 has a default message
+
     try
     {
         debug_settings ds;
